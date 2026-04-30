@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PerfilResumen from "../components/PerfilResumen";
 
 function Home() {
   return (
@@ -11,20 +12,21 @@ function Home() {
         </p>
       </header>
 
+      <PerfilResumen />
+
       <div style={{ 
         display: 'flex', 
         justifyContent: 'center', 
         gap: '20px', 
-        flexWrap: 'wrap' 
+        flexWrap: 'wrap',
+        marginTop: "40px"
       }}>
-        {/* Tarjeta 1: Acerca de mí */}
         <div style={cardStyle}>
           <h3>¿Quién soy?</h3>
           <p>Conoce más sobre mi formación en Informática y mis intereses en ciberseguridad.</p>
           <Link to="/acerca" style={linkButtonStyle}>Ver Perfil</Link>
         </div>
 
-        {/* Tarjeta 2: Tablas/Proyectos */}
         <div style={cardStyle}>
           <h3>Proyectos</h3>
           <p>Revisa la implementación de mis componentes y tablas de datos dinámicas.</p>
@@ -39,7 +41,6 @@ function Home() {
   );
 }
 
-// Estilos rápidos para las tarjetas
 const cardStyle = {
   border: '1px solid #ddd',
   borderRadius: '10px',

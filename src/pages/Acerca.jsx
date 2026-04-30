@@ -1,11 +1,17 @@
 import foto from "../assets/YO.jpeg";
+import { useAlumnoContext } from "../context/AlumnoContext";
+
 function Acerca() {
+  const { alumno } = useAlumnoContext();
+
   return (
     <div style={{ padding: "20px", fontFamily: "Arial" }}>
       <h1>Acerca de mí</h1>
 
-      <p><strong>Nombre:</strong> Alejandrina Ramos Castañeda</p>
-      <p><strong>Carrera:</strong> Licenciatura en Informática</p>
+      <p><strong>Nombre:</strong> {alumno.nombre}</p>
+      <p><strong>Carrera:</strong> {alumno.carrera}</p>
+      <p><strong>Grupo:</strong> {alumno.grupo}</p>
+      <p><strong>Semestre:</strong> {alumno.semestre}</p>
 
       <p>
         Soy una estudiante de la Licenciatura en Informática con un gran interés en el desarrollo web 
