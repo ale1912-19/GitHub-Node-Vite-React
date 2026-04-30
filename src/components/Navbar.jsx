@@ -26,6 +26,8 @@ function Navbar() {
       <Link to="/contacto" style={linkStyle}>Contacto</Link>
       <span>|</span>
       <Link to="/tablas" style={linkStyle}>Tablas</Link>
+      <span>|</span>
+      <Link to="/usuarios" style={linkStyle}>Usuarios</Link>
     </nav>
   );
 }
