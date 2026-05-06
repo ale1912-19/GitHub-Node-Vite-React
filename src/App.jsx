@@ -7,6 +7,8 @@ import Acerca from "./pages/Acerca";
 import Contacto from "./pages/Contacto";
 import Tablas from "./pages/Tablas";
 import Usuarios from "./pages/Usuarios";
+import EditarAlumno from "./pages/EditarAlumno";
+
 
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
           <Route path="/acerca" element={<Acerca />} />
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/tablas" element={<Tablas />} />
+          <Route path="/editar-alumno" element={<EditarAlumno />} />
           <Route path="/usuarios" element={<Usuarios />} />
         </Routes>
       </div>
